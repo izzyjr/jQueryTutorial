@@ -6,4 +6,4 @@ $(document).ready(function(){
     });
 });
 
-// jQuery is for simplifying AJAX calls and DOM manipulation
+// jQuery is for simplifying AJAX calls and DOM manipulation.
