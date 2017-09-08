@@ -19,8 +19,9 @@ $(function (){
 //      "mouseover": function() { console.log( "hovered!" ); }
 //   });
 //     $("p").off("click");
-    $( "p" ).one({
-     "click": function() { console.log( "clicked!" ); },
+    $( "p" ).one({"click": function() { 
+         console.log( "clicked!" ); 
+     },
      "mouseover": function() { console.log( "hovered!" ); }
   });
   
