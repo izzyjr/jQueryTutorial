@@ -1,36 +1,55 @@
-$(function (){
-    // $("p").click(function(){
-    //     console.log("You clicked on a paragraph");
-    // });
-    // $("p").hover(function(){
-    //     console.log("hovering");
-    //     },
-    //     function(){
-    //         console.log("you left");
-    //     });
-    // $("input").focus(function(){
-    //     console.log("you did something");
-    // });
-    // $("p").on("click", function(){
-    //     console.log("You clicked on a paragraph");
-    // });
-//     $( "p" ).on({
-//      "click": function() { console.log( "clicked!" ); },
-//      "mouseover": function() { console.log( "hovered!" ); }
-//   });
-//     $("p").off("click");
-    $( "p" ).one({
-     "click": function() { console.log( "clicked!" ); },
-     "mouseover": function() { console.log( "hovered!" ); }
-  });
-  
+$(function(){
+    
+    // Examples:
+    
+    // $("img").hide(10000);
+    // $("img").show(5000);
+    
+    //  $("h1").slideUp(10000);
+    // $("h1").slideDown(5000);
+    
+    // $("p").fadeOut(10000);
+    // $("p").fadeIn(5000);
+    
+    // $("p").toggle("normal");
+    // $("img").toggle("slow");
+    
+    // $("h1").hide(100);
+    // $("h1").fadeIn(2000).addClass("blue");
+    
+    $("h1").hide();
+    $("h1").fadeIn(2000, function() {
+        $(this).addClass("blue")
+    });
+    
+    $("img").on("click", function(){
+      $("h1").stop(); 
+    });
+    
+    
+    
+    
+    
+    
 });
 
-//          jQuery-Events
-// 1.) Click event can be applied to any HTML element
-// 2.) Other DOM events: dblclick, mouseenter, mouseleave, mousedown, mouseup, hover
-// 3.) Common form events: foucs, blur, change
-// 4.) with .on method: more events can be added
-// 5.) several events can ve added with their respective functions
-// 6.) .off turns off any event
-// 7.) .one method allows event's function to run once
+//                          jQuery Effects
+// 1.) hide, show, slideUp, slideDown, fadeOut, fadeIn : manipulation of elements
+// 2.) within parameter parenthesis arguments can be passed: slow, fast, normal
+// 3.) the arguments can also be passed in milliseconds
+// 4.) toggle();
+// 5.) differ an action until animation is completed - Animation call back function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
